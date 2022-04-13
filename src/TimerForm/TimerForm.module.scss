@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+
+  .input {
+    padding: 1rem 0.5rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+  }
+
+  .submitButton {
+    padding: 1rem 0.5rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+  }
+}
