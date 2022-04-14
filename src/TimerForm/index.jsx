@@ -1,8 +1,14 @@
 import styles from "./TimerForm.module.scss";
 
 const TimerForm = () => {
+  const handleFormSubmit = ({ event }) => {
+    event.preventDefault();
+    const form = event.target;
+    console.log(form);
+  };
+
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={handleFormSubmit}>
       <input
         type="text"
         className={styles.input}
