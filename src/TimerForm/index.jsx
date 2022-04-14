@@ -2,7 +2,6 @@ import styles from "./TimerForm.module.scss";
 
 const TimerForm = () => {
   const handleFormSubmit = ({ event }) => {
-    event.preventDefault();
     const form = event.target;
     console.log(form);
   };
