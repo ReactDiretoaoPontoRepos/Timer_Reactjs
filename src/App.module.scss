@@ -6,3 +6,10 @@
 .title {
   text-align: center;
 }
+.timers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
