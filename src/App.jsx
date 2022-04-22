@@ -5,9 +5,12 @@ import TimerForm from "./components/TimerForm";
 
 const App = () => {
   const [timers, setTimers] = useState([
-    { id: 1, name: "Primeira", duration: 4 },
-    { id: 2, name: "Segunda", duration: 60 },
+    { id: 1, name: "Modelo", duration: 100 },
   ]);
+
+  const deleteTimer = (id) => {
+    setTimers(timers.filter((timer) => timer.id !== id));
+  };
 
   return (
     <main className={styles.main}>
@@ -16,7 +19,7 @@ const App = () => {
 
       <div className={styles.timers}>
         {timers.map((timer) => (
-          <Timer key={timer.id} {...timer} />
+          <Timer key={timer.id} deleteTimer={deleteTimer} {...timer} />
         ))}
       </div>
     </main>
