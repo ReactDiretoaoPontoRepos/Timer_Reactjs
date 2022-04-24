@@ -5,7 +5,7 @@ import TimerForm from "./components/TimerForm";
 
 const App = () => {
   const [timers, setTimers] = useState([
-    { id: 1, name: "Modelo", duration: 100 },
+    // { id: 1, name: "Modelo", duration: 60 },
   ]);
 
   const deleteTimer = (id) => {
